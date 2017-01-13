@@ -1,7 +1,7 @@
 {
   "name": "pi-utils",
   "version": "0.1.1",
-  "description": "Raspberry Pi Utility Functions",
+  "description": "Raspberry Pi Utility Functions / WiFi Management",
   "main": "index.js",
   "scripts": {
     "test": "mocha test --recursive"
@@ -11,6 +11,17 @@
     "type": "git",
     "url": "git://github.com/hellogrojo/pi-utils.git"
   },
+  "keywords": [
+	"pi",
+	"raspberry pi",
+	"rpi",
+	"gpio",
+	"i2c",
+	"spi",
+	"wifi",
+	"wireless",
+	"wlan"
+  ],
   "license": "ISC",
   "dependencies": {
     "is-online": "^6.0.1",
