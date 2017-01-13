@@ -1,0 +1,25 @@
+{
+  "name": "pi-utils",
+  "version": "0.1.0",
+  "description": "Raspberry Pi Utility Functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test --recursive"
+  },
+  "author": "grojo, inc.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hellogrojo/pi-utils.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "is-online": "^6.0.1",
+    "promise-retry": "^1.1.1",
+    "rpio": "^0.9.14"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7"
+  }
+}
