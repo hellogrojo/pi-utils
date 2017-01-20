@@ -106,4 +106,24 @@ describe('System Configuration', function() {
 
 	});
 	
+	describe('#machineId', function() {
+		
+		it('Machine id should return a valid 32-char hex string', function() {
+			expect(util.system.machineId()).to.match(/^([A-Fa-f0-9]{2}){16}$/);
+		});
+		
+	});
+	
+	describe('#hostname', function() {
+		
+		it('Hostname should return valid string', function() {
+			expect(util.system.hostname()).to.be.a('string');
+		});
+		
+		it('Hostname should be at least 1 char long', function() {
+			expect(util.system.hostname()).to.have.length.above(1);
+		})
+		
+	});
+	
 });

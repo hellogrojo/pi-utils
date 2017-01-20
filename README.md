@@ -9,6 +9,10 @@
 
 A collection of utilities for developing on the Raspberry Pi, including various system/os utilities, gpio functions, and WiFi management.  Tested primarily on RPi3.  
 
+## Documentation &nbsp;
+[github](https://github.com/hellogrojo/pi-utils/blob/master/documentation.md)
+
+
 ## Installation &nbsp;
 **With [node](http://nodejs.org) [installed](http://nodejs.org/en/download):**
 ```sh
