@@ -42,6 +42,15 @@ Promise { <pending> }
 ```sh
 > var utils = require('pi-utils');
 
+# Get Disk Stats
+> utils.perf.diskStats();
+{ total: 7364, used: 1999, free: 5037 }
+
+```
+
+```sh
+> var utils = require('pi-utils');
+
 # Get GPIO status using rpio
 > utils.rpio.open(11, utils.rpio.INPUT);
 > console.log('Pin 11 is currently set ' + (utils.rpio.read(11) ? 'high' : 'low'));
@@ -50,7 +59,7 @@ Pin 11 is currently set low
 
 ### Table of Contents
 
-#WiFi Utilities
+#WiFi Utilities (utils.wifi)
 
 -   [scanNetworks](#scannetworks)
 -   [setCreds](#setcreds)
@@ -66,7 +75,7 @@ Pin 11 is currently set low
 -   [isConnected](#isconnected)
 -   [isOnline](#isonline)
 
-#System / Board Utilities
+#System / Board Utilities (utils.system)
 
 -   [cpuTemp](#cputemp)
 -   [gpuTemp](#gputemp)
@@ -83,6 +92,14 @@ Pin 11 is currently set low
 -   [firmware](#firmware)
 -   [clockSpeed](#clockspeed)
 -   [displayState](#displaystate)
+
+#Performance Data (utils.perf)
+
+-   [loadAverage](#loadaverage)
+-   [totalMemory](#totalmemory)
+-   [freeMemory](#freememory)
+-   [diskStats](#diskstats)
+
 
 ## scanNetworks
 
@@ -293,3 +310,29 @@ Turn on/off official LCD (may work for other displays, not tested
 **Parameters**
 
 -   `enable` **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** turn on (true), or off (false)
+
+
+## loadAverage
+
+Get CPU load average
+
+Returns **float** 
+
+## totalMemory
+
+Get total memory available to OS
+
+Returns **float** 
+
+## freeMemory
+
+Get free memory
+
+Returns **float** 
+
+## diskStats
+
+Get total/free space on root mount
+
+Returns **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** of float, values in MB
+
