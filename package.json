@@ -1,6 +1,6 @@
 {
   "name": "pi-utils",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Raspberry Pi Utility Functions / WiFi Management",
   "main": "index.js",
   "scripts": {
